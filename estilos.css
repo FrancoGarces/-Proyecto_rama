@@ -4,6 +4,7 @@ body{
     background-color: rgb(46, 53, 79)
 }
 .cabeza{
+    background-image: linear-gradient(rgb(46, 53, 79),rgb(46, 53, 79),white,rgb(46, 53, 79),rgb(46, 53, 79));
     display: grid;
     background-color: black;
     margin-left: auto;
@@ -13,6 +14,7 @@ body{
 .logo{
     display: grid;
     margin: 20px;
+    margin-top: 60px;
 }
 .menu{
     display: grid;
@@ -32,6 +34,9 @@ h1.titulo{
 .p1{
     display: inline;
 }
+.subMenu a{
+    color: white;
+}
 .subMenu li{
     font-weight: 600;
     list-style: none;
@@ -39,6 +44,7 @@ h1.titulo{
     margin: 0 20px;
 }
 .pie{
+    background-image: linear-gradient(rgb(46, 53, 79),rgb(46, 53, 79),white,rgb(46, 53, 79),rgb(46, 53, 79));
     flex-direction: column;
     background-color: black;
     margin-top: 40px;
@@ -47,6 +53,7 @@ h1.titulo{
     height: 800px;
     width: 47%;
     margin-left: 38px;
+    background-color: rgb(22, 81, 190);
 }
 .mess10{
     height: 800px;
@@ -65,6 +72,47 @@ h1.titulo{
     justify-content: space-evenly;
     display: flex;
     width: 300px;
+}
+.h1Animado{
+}
+.animacionInfinita{
+    display: grid;
+    justify-content: center;
+    font-family: monospace;
+    animation-delay: 1s;
+    animation: maquina 7s infinite alternate; 
+}
+@keyframes maquina {
+    from{
+        width: 100%;
+    }
+    to{
+        width: 75%;
+    }
+    from{
+        width: 75%
+    }
+    to{
+        width: 120%;
+    }
+}
+.subMenu a{
+    animation: saltar 2s infinite;
+    animation-delay: 0s;
+    transform: translateY(0);
+    display: inline-block;
+    animation-timing-function: ease-in;
+}
+@keyframes saltar{
+    0%{
+        transform: translateY(4px);
+    }
+    25%{
+        transform: translateY(10px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
 }
 @media (max-width: 480px){
     .diegote{
