@@ -44,12 +44,13 @@ h1.titulo{
     margin: 0 20px;
 }
 .pie{
+    display: flex;
     background-image: linear-gradient(rgb(46, 53, 79),rgb(46, 53, 79),white,rgb(46, 53, 79),rgb(46, 53, 79));
     flex-direction: column;
     background-color: black;
-    margin-top: 40px;
+    margin-top: 0px;
 }
-.diegote{
+.diegoteContainer{
     height: 800px;
     width: 47%;
     margin-left: 38px;
@@ -138,5 +139,4 @@ h1.titulo{
     .imagenes-containerGaleria{
         display: flex;
         justify-content: center;
-    }
 }

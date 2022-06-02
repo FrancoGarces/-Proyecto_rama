@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link href="../estilos css/bootstrap.min.css"
     <link rel="stylesheet" href="../estilos.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,32 +10,40 @@
 </head>
 <body>
     <header class="cabeza">
-        <nav>
-            <div class="logo">
-                <a href="../index.html" class="classlogo"><img src="../imagenes/logo.svg" alt=""></a>
+        <nav class="navbar navbar-dark bg-primary"">
+            <div class="container-fluid">
+                <a href="../index.html" class="classlogo"> <img src="../imagenes/logo.svg" alt="" srcset=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="inicio.html">inicio</a>
+                    <a class="nav-link" href="plantilla.html">plantilla</a>
+                    <a class="nav-link" href="galeria.html">galeria</a>
+                    <a class="nav-link" href="sorteos.html">sorteos</a>
+                </div>
             </div>
-            <section class="menu">
-                <ul class="subMenu">
-                    <li><a href="inicio.html">inicio</a></li>
-                    <li><a href="plantilla.html">plantilla</a></li>
-                    <li><a href="galeria.html">galeria</a></li>
-                    <li><a href="sorteos.html">sorteos</a></li>
-                </ul>
-            </section>
+            </div>
         </nav>
     </header>
     <h1>ANIMACIONES</h1>
-    <form>
-        <label>Nombre</label><br/>
-        <input type="text"><br/> 
-        <label>Apellido</label><br/>
-        <input type="text"><br/>
-        <label>E-Mail</label><br/>
-        <input type="text"><br/>
-        <br>
-        <h3>¿Por qué deberias ganar el sorteo?</h3>
-        <textarea name="Ayuda" id="" cols="30" rows="10"></textarea>
-        <input type="submit" value="Enviar">
+    <form class="container m-5">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+            <label for="exampleFormControlInput1" class="form-label">Apellido</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Apellido">
+            <label for="exampleFormControlInput1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre@Ejemplo.com">
+    </div>
+    <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Opinión</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <div>
+        <button type="button" class="btn btn-danger">Enviar</button>
+    </div>
     </form>
     <footer class="pie">
         <h4>Redes Sociales</h4>
@@ -44,5 +53,6 @@
         <a href="https:www.discord.com"><img src="../imagenes/icono dicord.jpg" alt="discord" height="50"></a>
         <a href="https://www.copyrighted.com"><img src="../imagenes/icono copy.jpg" alt="copyrighted" height="50"></a>
     </footer>
+    <script src="../Js/bootstrap.min.js"></script>
 </body>
 </html>

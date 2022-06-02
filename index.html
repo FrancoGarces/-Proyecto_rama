@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="stylesheet" href="../estilos.css">
+    <link href="./estilos css/bootstrap.min.css"
+    <link rel="stylesheet" href="./estilos css/estilos.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,23 @@
 </head>
 <body>
     <header class="cabeza">
-        <nav>
+        <nav class="navbar navbar-dark bg-primary"">
+            <div class="container-fluid">
+            <a href="index.html" class="classlogo"> <img src="./imagenes/logo.svg" alt="" srcset=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="./paginas/inicio.html">inicio</a>
+                <a class="nav-link" href="./paginas/plantilla.html">plantilla</a>
+                <a class="nav-link" href="./paginas/galeria.html">galeria</a>
+                <a class="nav-link" href="./paginas/sorteos.html">sorteos</a>
+                </div>
+            </div>
+            </div>
+        </nav>
+        <!-- <nav>
             <div class="logo">
                 <a href="index.html" class="classlogo"><img src="./imagenes/logo.svg" alt=""></a>
             </div>
@@ -21,11 +38,11 @@
                     <li><a href="./paginas/sorteos.html">sorteos</a></li>
                 </ul>
             </section>
-        </nav>
+        </nav> -->
     </header>
     <h1><img class="pelotaSagrada" src="./imagenes/fotoINDEX.jpg" alt="fotoInicio"></h1>
     <section class="imagenesIndex">
-        <img class="diegote" src="./imagenes/maradonaINDEX.jpg" alt="">
+        <img class="diegoteContainer" src="./imagenes/maradonaINDEX.jpg" alt="">
         <img class="mess10" src="./imagenes/messiINDEX.jpg_large" alt="">
     </section>
     <footer class="pie">
@@ -36,5 +53,6 @@
         <a href="https:www.discord.com"><img src="./imagenes/icono dicord.jpg" alt="discord" height="50"></a>
         <a href="https://www.copyrighted.com"><img src="./imagenes/icono copy.jpg" alt="copyrighted" height="50"></a>
     </footer>
+    <script src="./Js/bootstrap.min.js"></script>
 </body>
 </html>
