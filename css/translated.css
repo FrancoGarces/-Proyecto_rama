@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2e354f; }
+
+.cabeza {
+  background-color: black;
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; }
+  .cabeza__logo {
+    display: grid;
+    margin: 20px;
+    margin-top: 60px; }
+  .cabeza__menu {
+    display: grid;
+    justify-content: center; }
+    .cabeza__menu__subMenu a {
+      color: white;
+      animation: saltar 2s infinite;
+      animation-delay: 0s;
+      transform: translateY(0);
+      display: inline-block;
+      animation-timing-function: ease-in; }
+    .cabeza__menu__subMenu li {
+      font-weight: 600;
+      list-style: none;
+      display: inline-block;
+      margin: 0 20px; }
