@@ -1,0 +1,40 @@
+@keyframes maquina {
+    from{
+        width: 100%;
+    }
+    to{
+        width: 75%;
+    }
+    from{
+        width: 75%
+    }
+    to{
+        width: 120%;
+    }
+}
+@media (max-width: 480px){
+    .diegote{
+        width: 400px;
+    }
+    .mess10{
+        width: 400px;
+        margin-left: 38px;
+    }
+    .logo{
+        justify-content: center;
+    }
+    .fotolinea{
+        display: grid;
+        grid-template-columns: 100px;
+        justify-content: center;
+    }
+    h1.titulo{
+        display: flex;
+        justify-content: center;
+        max-width: 54px;
+    }
+    .imagenes-containerGaleria {
+        display: flex;
+        justify-content: center;
+    }
+}

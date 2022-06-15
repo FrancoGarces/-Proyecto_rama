@@ -1,37 +1,12 @@
-body{
-    margin: 0;
-    padding: 0;
-    background-color: rgb(46, 53, 79)
-}
-.cabeza{
-    background-color: black;
-    display: grid;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+@import "./misc/animations";
+@import "./misc/normalize" ;
+@import "./misc/variables" ;
 
-    &__logo{
-        display: grid;
-        margin: 20px;
-        margin-top: 60px;
-    }
+@import "./pages/home.scss";
+@import "./pages/inicio.scss";
+@import "./pages/plantillas.scss";
+@import "./pages/galeria.scss";
+@import "./pages/sorteos.scss";
 
-    &__menu{
-        display: grid;
-        justify-content: center;
-    &__subMenu a{
-        color: white;
-        animation: saltar 2s infinite;
-        animation-delay: 0s;
-        transform: translateY(0);
-        display: inline-block;
-        animation-timing-function: ease-in;
-    }
-        &__subMenu li{
-            font-weight: 600;
-            list-style: none;
-            display: inline-block;
-            margin: 0 20px; 
-        }
-    }
-}
+@import "./partials/header.scss";
+@import "./partials/footer.scss";

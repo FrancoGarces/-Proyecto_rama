@@ -1,0 +1,7 @@
+.animacionInfinita{      
+    display: grid;
+    justify-content: center;
+    font-family: monospace;
+    animation-delay: 1s;
+    animation: maquina 7s infinite alternate; 
+}

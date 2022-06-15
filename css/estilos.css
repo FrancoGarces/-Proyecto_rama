@@ -75,6 +75,7 @@ h1.titulo{
     width: 300px;
 }
 .h1Animado{
+    border: 20px;
 }
 .animacionInfinita{
     display: grid;
@@ -140,3 +141,4 @@ h1.titulo{
         display: flex;
         justify-content: center;
     }
+}
