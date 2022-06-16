@@ -1,7 +1,9 @@
 .animacionInfinita{      
     display: grid;
     justify-content: center;
-    font-family: monospace;
-    animation-delay: 1s;
-    animation: maquina 7s infinite alternate; 
+    font-family: var($font-principal);
+    color: map-get($colors,color-negro )
+}
+.img.imagenes-containerGalery{
+    @include sixes(400px,300px);
 }

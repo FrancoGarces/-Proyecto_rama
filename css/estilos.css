@@ -1,17 +1,22 @@
+:root {
+    --color-blanco: white;
+    --color-afa: rgb(46, 53, 79);
+    --color-negro: black;
+    --font-princial: 'property', sans-serif;
+}
 body{
     margin: 0;
     padding: 0;
-    background-color: rgb(46, 53, 79)
+    background-color: var(--color-afa);
 }
 .cabeza{
-    background-image: linear-gradient(rgb(46, 53, 79),rgb(46, 53, 79),white,rgb(46, 53, 79),rgb(46, 53, 79));
     display: grid;
-    background-color: black;
+    background-color:var(--color-negro);
     margin-left: auto;
     margin-right: auto;
     width: 100%;
 }
-.logo{
+div.logo{
     display: grid;
     margin: 20px;
     margin-top: 60px;
@@ -31,30 +36,32 @@ h1.titulo{
     justify-content: space-between;
     justify-items: center;
 }
+.tituloSorteo{
+    color: rosybrown
+}
+.subMenu{
+    display: flex;
+}
 .p1{
     display: inline;
 }
 .subMenu a{
-    color: white;
+    color: var(--color-blanco)
 }
 .subMenu li{
     font-weight: 600;
     list-style: none;
-    display: inline-block;
-    margin: 0 20px;
-}
-.pie{
     display: flex;
-    background-image: linear-gradient(rgb(46, 53, 79),rgb(46, 53, 79),white,rgb(46, 53, 79),rgb(46, 53, 79));
-    flex-direction: column;
-    background-color: black;
+    justify-content: space-around;
+    font-size: var(--font-princial);
+}
+#pie{
+    background-color: var(--color-negro);
     margin-top: 0px;
 }
 .diegoteContainer{
     height: 800px;
-    width: 47%;
-    margin-left: 38px;
-    background-color: rgb(22, 81, 190);
+    width: 50%;
 }
 .mess10{
     height: 800px;
@@ -65,56 +72,27 @@ h1.titulo{
     display: flex;
     width: 100%;
 }
+
 .imagenes-containerGaleria{
     display: grid;
 }
 .textoLargo{
-    font-size: large;
+    font-size: var(--font-princial);
     justify-content: space-evenly;
     display: flex;
     width: 300px;
 }
 .h1Animado{
     border: 20px;
+    color: aqua;
 }
 .animacionInfinita{
     display: grid;
     justify-content: center;
-    font-family: monospace;
-    animation-delay: 1s;
-    animation: maquina 7s infinite alternate; 
-}
-@keyframes maquina {
-    from{
-        width: 100%;
-    }
-    to{
-        width: 75%;
-    }
-    from{
-        width: 75%
-    }
-    to{
-        width: 120%;
-    }
+    font-family: var(--font-princial);
 }
 .subMenu a{
-    animation: saltar 2s infinite;
-    animation-delay: 0s;
-    transform: translateY(0);
     display: inline-block;
-    animation-timing-function: ease-in;
-}
-@keyframes saltar{
-    0%{
-        transform: translateY(4px);
-    }
-    25%{
-        transform: translateY(10px);
-    }
-    50%{
-        transform: translateY(10px);
-    }
 }
 @media (max-width: 480px){
     .diegote{
